@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+</head>
+<body style="background-color: lightyellow;">
+	<h2 style="text-align: center;">Steps to Prevent the Spread of COVID-19</h2>
+</body>
+</html>
+
+<style>
+	@media(min-width: 460px){
+			.container-1{
+			display: flex;
+			/*
+			align-items: flex-start;
+			align-items: flex-end;
+			align-items: center;
+			
+			flex-direction: column;
+			*/
+		}
+		.container-2{
+			display: flex;
+			/*
+			justify-content: flex-start;
+			justify-content: flex-end;
+			*/
+
+			justify-content: center;
+			justify-content: space-around;
+		}
+		.container-3{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	
+	.container-1 div, .container-2 div, .container-3 div{
+		border:3px #ccc solid;
+		padding:50px;
+	}
+
+	.box-1{
+		flex: 2;
+		order: 1;
+	}
+	.box-2{
+		flex: 2;
+		order: 2;
+	}
+	.box-3{
+		flex: 2;
+		order: 3;
+	}
+
+
+	.container-2-box{
+		flex-basis: 23%;
+	}
+	.container-3-box{
+		flex-basis: 35%;
+	}
+</style>
+
+<div class="container-1">
+	<div class="box-1" style="background-color: powderblue;">
+		<h3>Step One</h3>
+		<p>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p>
+	</div>
+	<div class="box-2" style="background-color: powderblue;">
+		<h3>Step Two</h3>
+		<p>Maintain a safe distance from anyone who is coughing or sneezing.</p>
+	</div>
+	<div class="box-3" style="background-color: powderblue;">
+		<h3>Step Three</h3>
+		<p>Wear a mask when physical distancing is not possible.</p>
+	</div>
+</div>
+
+<div class="container-2">
+	<div class="container-2-box" style="background-color: powderblue;">
+		<h3>Step Four</h3>
+		<p>Don’t touch your eyes, nose or mouth.</p>
+	</div>
+	<div class="container-2-box" style="background-color: powderblue;">
+		<h3>Step Five</h3>
+		<p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</p>
+	</div>
+	<div class="container-2-box" style="background-color: powderblue;">
+		<h3>Step Six</h3>
+		<p>Stay home if you feel unwell.</p>
+	</div>
+</div>
+
+<div class="container-3">
+	<div class="container-3-box" style="background-color: powderblue;">
+		<h3>Step Six</h3>
+		<p>If you have a fever, cough and difficulty breathing, seek medical attention.</p>
+	</div>
+</div>
